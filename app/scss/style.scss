@@ -214,6 +214,10 @@
 .works {
 	margin-bottom: 80px;
 
+	&__intro {
+		margin-bottom: 95px;
+	}
+
 	&__suptitle {
 		font-size: 22px;
 		line-height: 30px;
@@ -231,7 +235,7 @@
 		@extend %title-font;
 		color: $primary-color;
 		text-align: center;
-		margin-bottom: 95px;
+
 	}
 
 
@@ -240,13 +244,34 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: 1054px;
+		margin: 0 auto 80px;
+		padding: 0 30px;
 
 	}
 
+	&___item-media {
+		order: 1;
+		width: 40%;
+	}
+
+
+
 	&__item-body {
+		order: 2;
 		margin-left: 130px;
+		margin-right: 60px;
+		max-width: 540px;
+		padding-right: 20px;
+		width: 60%;
+	}
 
+	&__items--reverse &__item-media {
+		order: 2;
+	}
 
+	&__items--reverse &__item-body {
+		order: 1;
 	}
 
 	&__body-suptitle {
@@ -273,7 +298,5 @@
 		@extend %text-font;
 
 	}
-
-	&__item-body {}
 
 }
