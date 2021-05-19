@@ -40,6 +40,12 @@
 		line-height: 19px;
 		color: #fff;
 		margin-right: 77px;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: $primary-color;
+			transition: all 0.3s;
+		}
 	}
 }
 
@@ -312,8 +318,6 @@
 
 	}
 
-	&__media {}
-
 	&__image {
 		width: 100%;
 		height: auto;
@@ -411,5 +415,115 @@
 
 	&__link:not(:last-child) {
 		margin-right: 30px;
+	}
+}
+
+.footer {
+	&__inner {
+		padding: 78px 30px 19px 30px;
+		max-width: 1136px;
+		width: 100%;
+		display: flex;
+
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 568px;
+	}
+
+	&__item {
+		width: 50%;
+		margin-bottom: 70px;
+
+	}
+
+	&__title {
+		font-size: 13px;
+		line-height: 18px;
+		@extend %text-font;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $primary-color;
+		margin-bottom: 25px;
+	}
+
+	&__list-item:not(:last-child) {
+		margin-bottom: 19px;
+	}
+
+	&__list-link {
+		font-size: 13px;
+		line-height: 18px;
+		@extend %text-font;
+		color: $blue-color;
+	}
+
+	&__nav {
+		display: flex;
+
+	}
+
+	&__nav-item:not(:last-child) {
+		margin-right: 39px;
+	}
+
+	&__links {
+		font-size: 14px;
+		line-height: 19px;
+		@extend %text-font;
+		color: $blue-color;
+	}
+
+	&__right {
+		display: flex;
+	}
+
+	&__media {
+		width: 50%;
+		margin-right: 80px;
+	}
+
+	&__contacts {
+		width: 50%;
+	}
+
+	&__contacts-title {
+		font-size: 13px;
+		line-height: 18px;
+		@extend %text-font;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $primary-color;
+		margin-bottom: 25px;
+	}
+
+	&__adress-link {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 19px;
+		@extend %title-font;
+		color: $blue-color;
+		margin-bottom: 29px;
+	}
+
+	&__phone {
+		display: block;
+		font-size: 16px;
+		line-height: 19px;
+		@extend %title-font;
+		color: $blue-color;
+	}
+
+	&__copyright {
+		font-size: 13px;
+		line-height: 18px;
+		@extend %text-font;
+		color: $primary-color;
+		padding-left: 30px;
+		padding-bottom: 65px;
 	}
 }
