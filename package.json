@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d app"
   },
   "author": "SS",
+  "homepage":"https://Sergitarius.github.io/IndeVets",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.13",
@@ -18,5 +20,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.1"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
