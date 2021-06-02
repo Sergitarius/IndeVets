@@ -10,6 +10,7 @@
 @media (max-width: 840px) {
 	.header {
 		width: 100%;
+		top: 0;
 
 
 		&__btn {
@@ -29,16 +30,21 @@
 		right: 0;
 		width: 100%;
 		text-align: center;
+		background-color: #fff;
+		padding: 10px 0;
 
 	}
 
 
 	.nav__link {
 		display: block;
+		color: $blue-color;
+
 	}
 
 	.nav__link:hover {
-		color: #60C1BD;
+		color: $primary-color;
+		border: none;
 
 	}
 
