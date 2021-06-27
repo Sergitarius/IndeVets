@@ -8,10 +8,10 @@
 .header {
 
 	margin: 0 auto;
-	max-width: 1230px;
+	top: 0;
+	left: 0;
+	right: 0;
 	position: fixed;
-
-	top: 25px;
 	width: 100%;
 	z-index: 5;
 
@@ -27,10 +27,6 @@
 		border-radius: 100px;
 
 	}
-
-	// .burger {
-	// 	display: none;
-	// }
 
 	&__btn {
 		background-color: transparent;
@@ -426,8 +422,8 @@
 
 .footer {
 	&__inner {
-		padding: 78px 30px 19px 30px;
-		max-width: 1136px;
+		min-height: 360px;
+		height: 100%;
 		width: 100%;
 		display: flex;
 
@@ -435,17 +431,14 @@
 
 	&__left {
 		display: flex;
-		align-items: center;
+
 		justify-content: space-between;
 		flex-wrap: wrap;
-		max-width: 568px;
+		flex-basis: 48%;
+		margin-right: 60px;
 	}
 
-	&__item {
-		width: 50%;
-		margin-bottom: 70px;
 
-	}
 
 	&__title {
 		font-size: 13px;
@@ -470,11 +463,11 @@
 
 	&__nav {
 		display: flex;
-
+		align-items: center;
 	}
 
 	&__nav-item:not(:last-child) {
-		margin-right: 39px;
+		padding-right: 20px;
 	}
 
 	&__links {
@@ -486,15 +479,9 @@
 
 	&__right {
 		display: flex;
-	}
+		flex-basis: 48%;
+		justify-content: space-between;
 
-	&__media {
-		width: 50%;
-		margin-right: 80px;
-	}
-
-	&__contacts {
-		width: 50%;
 	}
 
 	&__contacts-title {
